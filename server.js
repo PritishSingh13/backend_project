@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Connect to MongoDB (replace 'your-mongodb-uri' with your actual MongoDB connection string)
-mongoose.connect('mongodb+srv://admin:admin123@users.vzkorwi.mongodb.net/?retryWrites=true&w=majority&appName=users', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://admin:admin123@sample1.wlqnaqj.mongodb.net/?retryWrites=true&w=majority&appName=sample1', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Define a schema for the data
 const userSchema = new mongoose.Schema({
@@ -50,3 +50,9 @@ app.post('/submit', async(req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+
+/*
+
+mongodb+srv://admin:admin123@users.vzkorwi.mongodb.net/?retryWrites=true&w=majority&appName=users
+*/
